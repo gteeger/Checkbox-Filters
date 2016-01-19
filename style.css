@@ -1,0 +1,214 @@
+.sample-show-hide {
+    padding: 2px;
+    border: 2px solid #B8B8B8;
+    margin: 12px;
+    background: white;
+    width: 205px;
+    min-height: 100px;
+    float: left;
+    -webkit-transition: all linear 0.5s;
+    transition: all linear 0.5s;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    font-size: 11.5px;
+}
+
+.class1 {
+    margin: 2px;
+    background: white;
+    width: 205px;
+    height: 50px;
+    float: left;
+    -webkit-transition: all linear 0.5s;
+    transition: all linear 0.5s;
+}
+
+.sample-show-hide.ng-hide {
+    opacity: 0;
+}
+
+.class1.ng-hide {
+    opacity: 0;
+}
+
+#results {
+    min-width: 70px; 
+    min-height: 900px;
+    border: 0px solid;
+    background: white;
+    float: left;
+    padding: 4px;
+}
+
+
+#inline {
+    width: 1700px;
+    height: 2000px;
+    padding: 10px 10px 10px 10px;
+}
+
+
+#menu_wrap {
+    position: relative;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    padding-right: 0px;
+    width: 100%;
+    height: 23px;
+    list-style-type: none;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 1px;
+    border-radius: 0px;
+}
+
+.button a {
+    cursor: pointer;
+    text-align: center;
+    font: 11px Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    position: relative;
+    min-width: 50px;
+    height: 20px;
+    float: left;
+    padding: 10px;
+    padding-top: 5.5px;
+    padding-bottom: 5.5px;
+    text-decoration: none;
+    text-shadow: 0 .1px .1x rgba(0,0,0,.1);
+}
+
+.button:first-child a {
+    -webkit-border-top-left-radius: 0px;
+    -webkit-border-bottom-left-radius: 0px;
+    -moz-border-topleft-radius: 0px;
+    -moz-border-bottomleft-radius: 0px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0px;
+}
+
+.White, .White .button a {
+    color: #606060;
+    background: #EFEFEF;
+    background: -moz-linear-gradient(top, #ffffff 0%, #e2e2e2 100%);
+    border-right: 1px solid #e2e2e2;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e2e2e2',GradientType=0 );
+    background: linear-gradient(top, #ffffff 0%,#e2e2e2 100%);
+}
+
+
+    .White .button a:active {
+        background: #ededed;
+        background: -moz-linear-gradient(top, #ededed 0%, #ffffff 100%);
+        background: -webkit-linear-gradient(top, #ededed 0%,#ffffff 100%);
+        background: -o-linear-gradient(top, #ededed 0%,#ffffff 100%);
+        background: -ms-linear-gradient(top, #ededed 0%,#ffffff 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#ffffff',GradientType=0 );
+        background: linear-gradient(top, #ededed 0%,#ffffff 100%);
+    }
+
+.button:last-child a {
+    float: left;
+    border: none;
+    -webkit-border-top-right-radius: 0px;
+    -webkit-border-bottom-right-radius: 0px;
+    -moz-border-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+
+
+
+
+
+ul {
+    padding: 0;
+    list-style: none;
+    font: 11px Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+    ul li {
+        display: inline-block;
+        position: relative;
+        line-height: 33px;
+    }
+
+        ul li a {
+            color: #333;
+            text-decoration: none;
+        }
+
+            ul li a:hover {
+                color: #black;
+                background: #939393;
+            }
+
+        ul li ul.dropdown {
+            min-width: 158px; /* Set width of the dropdown */
+            background: #f2f2f2;
+            display: none;
+            position: absolute;
+            z-index: 999;
+            left: 0;
+            border: 1px dashed;
+            text-align: right;
+        }
+
+        ul li:hover ul.dropdown {
+            display: block; /* Display the dropdown */
+            text-align: right;
+        }
+
+        ul li ul.dropdown li {
+            display: block;
+        }
+
+
+
+
+
+#filters {
+    width: 140px;
+    height: 930px;
+    border: 0px dashed;
+    float: left;
+}
+
+#rows {
+    height: 110px;
+    width: 130px;
+    border: 0px solid #C0C0C0;
+    font: 12px/6px Helvetica, Garamond, Serif;
+    overflow: auto;
+    padding: 3px;
+}
+
+#thumbs {
+    height: 90px;
+    width: 110px;
+    border: 0px solid #C0C0C0;
+    font: 12px/6px Helvetica, Garamond, Serif;
+    overflow: auto;
+    padding: 3px;
+}
+
+
+
+#topic {
+    background: white;
+    min-height: 0px;
+    border: 0px solid #B8B8B8;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden; /*important for alignment*/
+    padding: 2px;
+}
+
+
+#row1 {
+    min-width: 1px;
+    height: 60px;
+    bottom: 0;
+}
