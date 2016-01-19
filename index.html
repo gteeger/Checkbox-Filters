@@ -1,0 +1,148 @@
+<!doctype html>
+<!--
+
+Title: Filtered Topics
+Created by: Gabriel Teeger
+Date: August 2014
+Description: Uses AngularJS, specifically the ngAnimate module to display results filtered by checkboxes
+
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sample</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular-animate.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+</head>
+<header>
+    <div id="navbar">
+        <ul id="menu_wrap" class="White">
+            <li class="button">
+                <a href="#">Link1</a>
+            </li>
+
+            <li class="button">
+                <a>Dropdown</a>
+                <br />
+                <ul class="dropdown">
+                    <li><a href="#">Topic 1</a></li>
+                    <br>
+
+                </ul>
+            </li>
+            <li class="button" style="float:right;"><a href="#">Float Right</a></li>
+
+
+        </ul>
+    </div>
+</header>
+
+<body ng-app="ngAnimate">
+    <div id="inline">
+        <div id="filters">
+            <div id="thumbs">
+                <br>
+                <label>
+                    <input type="checkbox" ng-model="h1" style="float:left; margin-right:10px;">
+                    Header 1
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" ng-model="h2" style="float:left; margin-right:10px;">
+                    Header 2
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" ng-model="h3" style="float:left; margin-right:10px;">
+                    Header 3
+                </label>
+                <br>
+
+            </div>
+            <br>
+            <br>
+            <div id="rows">
+                <br>
+                <label><small><u>Rows</u></small></label>
+                <br>
+                <br>
+                <label>
+                    <input type="checkbox" ng-model="topic1"> Row 1
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" ng-model="topic2"> Row 2
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" ng-model="topic3"> Row 3
+                </label>
+                <br>
+            </div>
+        </div>
+        <div id="results">
+            <div id="row1">
+                <div ng-show="h1" class="class1">
+                    Header 1
+                </div>
+                <div ng-show="h2" class="class1">
+                    Header 2
+                </div>
+                <div ng-show="h3" class="class1">
+                    Header 3
+                </div>
+            </div>
+            <div id="topic">
+                <div ng-show="topic1">
+                    <label>Row 1 </label>
+                </div>
+                <div class="check-element sample-show-hide" ng-show="h1 && topic1">
+                    Info Here
+                </div>
+                <div class="check-element sample-show-hide" ng-show="h2 && topic1">
+                    Info Here
+                </div>
+                <div class="check-element sample-show-hide" ng-show="h3 && topic1">
+                    Info Here
+                </div>
+            </div>
+           <div id="topic">
+                <div ng-show="topic2">
+                    <label>Row 2 </label>
+                </div>
+                <div class="check-element sample-show-hide" ng-show="h1 && topic2">
+                    Text Here
+                </div>
+                <div class="check-element sample-show-hide" ng-show="h2 && topic2">
+                    Overflow Overflow Overflow  Overflow  Overflow  Overflow  Overflow
+                    Overflow  Overflow  Overflow  Overflow  Overflow  Overflow  Overflow
+                    Overflow Overflow Overflow  Overflow  Overflow  Overflow  Overflow
+                    Overflow  Overflow  Overflow  Overflow  Overflow  Overflow  Overflow
+                    Overflow Overflow Overflow  Overflow  Overflow  Overflow  Overflow
+                    Overflow  Overflow  Overflow  Overflow  Overflow  Overflow  Overflow
+                </div>
+                <div class="check-element sample-show-hide" ng-show="h3 && topic2">
+                    Text Here
+                </div>
+            </div>
+            <div id="topic">
+                <div ng-show="topic3">
+                    <label>Row 3 </label>
+                </div>
+                <div class="check-element sample-show-hide" ng-show="h1 && topic3">
+                    Text Here
+                </div>
+                <div class="check-element sample-show-hide" ng-show="h2 && topic3">
+                    Text Here
+                </div>
+                <div class="check-element sample-show-hide" ng-show="h3 && topic3">
+                    Text Here
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
