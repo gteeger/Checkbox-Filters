@@ -1,11 +1,9 @@
 <!doctype html>
 <!--
-
 Title: Filtered Topics
 Created by: Gabriel Teeger
 Date: August 2014
 Description: Uses AngularJS, specifically the ngAnimate module to display results filtered by checkboxes
-
 -->
 
 <html lang="en">
@@ -17,43 +15,24 @@ Description: Uses AngularJS, specifically the ngAnimate module to display result
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular-animate.js"></script>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 </head>
-<header>
-    <div id="navbar">
-        <ul id="menu_wrap" class="White">
-            <li class="button">
-                <a href="#">Link1</a>
-            </li>
 
-            <li class="button">
-                <a>Dropdown</a>
-                <br />
-                <ul class="dropdown">
-                    <li><a href="#">Topic 1</a></li>
-                    <br>
-
-                </ul>
-            </li>
-            <li class="button" style="float:right;"><a href="#">Float Right</a></li>
-
-
-        </ul>
-    </div>
-</header>
 
 <body ng-app="ngAnimate">
     <div id="inline">
         <div id="filters">
-            <div id="thumbs">
+           
                 <br>
                 <label>
                     <input type="checkbox" ng-model="h1" style="float:left; margin-right:10px;">
                     Header 1
                 </label>
                 <br>
+                 <br>
                 <label>
                     <input type="checkbox" ng-model="h2" style="float:left; margin-right:10px;">
                     Header 2
                 </label>
+                <br>
                 <br>
                 <label>
                     <input type="checkbox" ng-model="h3" style="float:left; margin-right:10px;">
@@ -61,7 +40,7 @@ Description: Uses AngularJS, specifically the ngAnimate module to display result
                 </label>
                 <br>
 
-            </div>
+          
             <br>
             <br>
             <div id="rows">
@@ -109,7 +88,7 @@ Description: Uses AngularJS, specifically the ngAnimate module to display result
                     Info Here
                 </div>
             </div>
-           <div id="topic">
+            <div id="topic">
                 <div ng-show="topic2">
                     <label>Row 2 </label>
                 </div>
